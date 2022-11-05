@@ -13,6 +13,7 @@ rootProject.name = "gradle-catalog-client"
 dependencyResolutionManagement {
     repositories {
         mavenCentral()
+        maven("https://jitpack.io")
         repositories {
             maven {
                 name = "gpr.gh.actions"
