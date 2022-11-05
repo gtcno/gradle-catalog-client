@@ -17,6 +17,7 @@ plugins {
 repositories {
     mavenCentral()
     maven("https://jitpack.io")
+    maven("https://maven.pkg.github.com/gtcno/gradle-catalog")
     maven {
         name = "gpr.local"
         url = uri("https://maven.pkg.github.com/gtcno/gradle-catalog")
