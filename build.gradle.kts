@@ -30,5 +30,6 @@ repositories {
 
 dependencies {
     implementation(libs.konfig)
+    testImplementation("no.gtc.gradle:gradle-catalog:2022.11.05-21.11.2cd46231dea0")
 }
 
