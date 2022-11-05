@@ -14,26 +14,19 @@ dependencyResolutionManagement {
     repositories {
         mavenCentral()
         maven("https://jitpack.io")
-        repositories {
-            maven {
-                name = "gpr.gh.actions"
-                url = uri("https://maven.pkg.github.com/gtcno/gradle-catalog")
-            }
-            maven {
-                name = "gpr.local"
-                url = uri("https://maven.pkg.github.com/gtcno/gradle-catalog")
-                credentials {
-                    username = System.getenv("GPR_USER")
-                    password = System.getenv("GPR_TOKEN")
-                }
+        maven("https://maven.pkg.github.com/gtcno/gradle-catalog")
+        maven {
+            name = "gpr.local"
+            url = uri("https://maven.pkg.github.com/gtcno/gradle-catalog")
+            credentials {
+                username = System.getenv("GPR_USER")
+                password = System.getenv("GPR_TOKEN")
             }
         }
     }
     versionCatalogs {
-        this.
-        create("libs") {
-            from("no.gtc.gradle:gradle-catalog:2022.11.04-23.12.b3a29fabf640")
-//            from("com.github.gtcno:gradle-catalog:2022.11.05-21.11.2cd46231dea0")
+        this.create("libs") {
+            from("no.gtc.gradle:gradle-catalog:2022.11.05-21.11.2cd46231dea0")
         }
     }
 }
