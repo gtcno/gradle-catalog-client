@@ -5,3 +5,13 @@
  * Learn more about Gradle by exploring our samples at https://docs.gradle.org/7.5.1/samples
  * This project uses @Incubating APIs which are subject to change.
  */
+
+plugins {
+   libs.plugins.kotlin
+   application
+}
+
+dependencies {
+   implementation(libs.konfig)
+}
+
