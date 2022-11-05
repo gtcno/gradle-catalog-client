@@ -6,12 +6,16 @@
  * This project uses @Incubating APIs which are subject to change.
  */
 
+
 plugins {
-   libs.plugins.kotlin
-   application
+    @Suppress("DSL_SCOPE_VIOLATION")
+    libs.plugins.kotlin
+    @Suppress("DSL_SCOPE_VIOLATION")
+    libs.plugins.spotless
+    application
 }
 
 dependencies {
-   implementation(libs.konfig)
+    implementation(libs.konfig)
 }
 
