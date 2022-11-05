@@ -14,6 +14,18 @@ plugins {
     libs.plugins.spotless
     application
 }
+repositories {
+    mavenCentral()
+    maven("https://jitpack.io")
+    maven {
+        name = "gpr.local"
+        url = uri("https://maven.pkg.github.com/gtcno/gradle-catalog")
+        credentials {
+            username = System.getenv("GPR_USER")
+            password = System.getenv("GPR_TOKEN")
+        }
+    }
+}
 
 dependencies {
     implementation(libs.konfig)

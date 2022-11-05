@@ -30,8 +30,10 @@ dependencyResolutionManagement {
         }
     }
     versionCatalogs {
+        this.
         create("libs") {
             from("no.gtc.gradle:gradle-catalog:2022.11.04-23.12.b3a29fabf640")
+//            from("com.github.gtcno:gradle-catalog:2022.11.05-21.11.2cd46231dea0")
         }
     }
 }
